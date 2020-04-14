@@ -1,12 +1,8 @@
 node {
-   
- 
-        stage('Build testtttt') {
-            steps {
-                sh 'echo "Hello World"'
-                git 'https://github.com/AnthonyPellizzeri/test.git'                
-            }
-        }
-        
-
+   stage('Build testtttt') {
+        sh 'echo "Hello World"'
+   }
+   stage('Build testtttt') {
+      git 'https://github.com/AnthonyPellizzeri/test.git'                
+   }
 }
