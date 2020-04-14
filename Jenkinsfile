@@ -1,10 +1,8 @@
 pipeline {
-    agent { docker { image 'maven:3.3.3' } }
+    agent {  }
     stages {
         stage('build') {
-            steps {
-                sh 'mvn --version'
-            }
+            echo "sallsa"
         }
     }
 }
