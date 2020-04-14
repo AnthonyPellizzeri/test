@@ -1,8 +1,12 @@
 pipeline {
     agent any
     stages {
-        stage('SCM') {
-            git 'https://github.com/foo/bar.git'
+        stage('Build testtttt') {
+            steps {
+                sh 'echo "Hello World"'
+                git 'https://github.com/foo/bar.git'
+            }
         }
+        
     }
 }
