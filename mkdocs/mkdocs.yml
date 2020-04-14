@@ -1,0 +1,14 @@
+site_name: My Docs
+use_directory_urls: false
+nav:
+  - Accueil: index.md
+  - Installation: install.md
+  - Utilisation: use.md
+  - Documentation technique:
+    - Diagramme UML: uml.md
+    - Classe Lire CSV: lireCSV.md
+    - Classe Data: data.md
+    - Classe Session: session.md
+    - Classe Utilisateur: utilisateur.md
+    - Classe Controller: controller.md
+    - Classe Main: main.md

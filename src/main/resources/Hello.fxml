@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ul.miage.Controlleur.LectureContolleur">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="409.0" prefWidth="597.0">
+         <children>
+            <Label layoutX="20.0" layoutY="14.0" text="TP1">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="73.0" text="date début" />
+            <DatePicker fx:id="dateDebut" layoutX="100.0" layoutY="68.0" prefHeight="27.0" prefWidth="158.0" />
+            <DatePicker fx:id="dateFin" layoutX="328.0" layoutY="68.0" prefHeight="27.0" prefWidth="158.0" />
+            <Label layoutX="277.0" layoutY="73.0" text="date Fin" />
+            <Button fx:id="btnAfficher" layoutX="503.0" layoutY="68.0" mnemonicParsing="false" onAction="#afficherPeriode" text="Afficher" />
+            <TableView fx:id="table" layoutX="37.0" layoutY="125.0" prefHeight="250.0" prefWidth="529.0">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="103.0" text="Id" />
+                <TableColumn fx:id="nbrAction" prefWidth="142.0" text="Nb Actions" />
+                  <TableColumn fx:id="nbrSession" prefWidth="128.5" text="Nb session" />
+                  <TableColumn fx:id="duree" prefWidth="137.0" text="Durée" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
