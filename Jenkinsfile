@@ -6,6 +6,8 @@ pipeline {
                 sh 'echo "Hello World"'
             }
         }
-        
+        stage('SCM') {
+            git 'https://github.com/foo/bar.git'
+        }
     }
 }
