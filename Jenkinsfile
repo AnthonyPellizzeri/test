@@ -1,8 +1,8 @@
 node {
-   stage('Build testtttt') {
+   stage('testtttt') {
         sh 'echo "Hello World"'
    }
-   stage('Build testtttt') {
+   stage('git') {
       git 'https://github.com/AnthonyPellizzeri/test.git'                
    }
 }
